@@ -6,10 +6,8 @@
         <title>Document</title>
         <link href="/Users/sivaranjini/Desktop/My code/HW/HW-18/css/style.css" rel="stylesheet">
     </head>
-    
-
-
-<!--Nav Bar-->
+    <body>
+        <!--Nav Bar-->
 <nav class="navbar navbar-expand-lg navbar-light bg-light customNav">
     <a class="navbar-brand bebas" 
    href="#">The Art of Breathing</a>
@@ -23,7 +21,12 @@
  
      href="#">Home <span class="sr-only"></span></a>
         </li>
-<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="#navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Choose your path
+          </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="#navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
   
   <span class="navbar-toggler-icon"></span>
   
@@ -31,15 +34,26 @@
 <div class="collapse navbar-collapse" id="navbarSupportedContent">
   <ul class="navbar-nav me-auto mb-2 mb-lg-0">
     <li class="nav-item">
-      <a class="nav-link dropdown-toggle" aria-current="page" href="#">Yoga Path</a>
+        
+       
+
+     
+      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+      <a class="dropdown-item" href="#">Meditation path</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="#"> Pilates path</a>
+         <div class="dropdown-divider"></div>
+         <a class="dropdown-item" href="#">Yoga path </a>
+      </div>
+      </li>
+      
+      <li class="nav-item dropdown">
+      
     </li>
-    <li class="nav-item dropdown">
-      <a class="nav-link dropdown-toggle" aria-current="page" href="#">Meditation Path</a>
-    </li>
-    <li class="nav-item" dropdown>
-      <a class="nav-link dropdown-toggle" aria-current="page" href="#">Pilates Path</a>
-    </li>    
+   
   </ul>
+  <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+    <button id="searchbtn" class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
   <!--  
       <form class="form-inline my-2 my-lg-0">
         <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
@@ -54,73 +68,186 @@
 
 <div class="jumbotron text-left">
 <div class="Jumbo Copy">
-  <h1>The Art Of Breathing</h1> 
-  <p class="lead">The Art of Breathing is designed to help you feel better in body and mind by practicing Yoga and Meditation.</p>
+  <h1 class="display-4 rockBackground">The Art Of Breathing</h1> 
+  <p class="lead">"The secret to living mindfully and paying attention to your breath in a very special way"</p>
+ 
   <!--  hide for now  
     <p>Discover the art of breathing by signing up for our classes.</p>
 -->
 </div>
 </div>
+    <!-- End jumbotron -->
+   <!-- Cards -->
+  <div class="container-fluid content">
+    <h2 class="sectionHeading">Featured Meditation, Pilates and Yoga classes</h2>
+   <div class="row showsNear">
+      <!-- Card 1 -->
+     <div class="cardContainer col-lg-4 col-md-4 col-sm-12">
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1499728603263-13726abce5fd?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=2550&q=80"class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title"> Meditation</h5>
+            <p class="card-text">"Mindfulness meditation is a type of meditation in which you focus on being intensely aware of what you're sensing and feeling in the moment, without interpretation and judgement."</p>
+            <a href="#" class="btn btn-primary bebas btn-success">Learn more</a>
+          </div>
+        </div>
+      </div>
+     <!-- End card 1 -->
+     <!-- Card 2 -->
+     <div class="cardContainer col-lg-4 col-md-4 col-sm-12">
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=2550&q=80"class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Pilates</h5>
+            <p class="card-text">"In 10 sessions you will feel a difference, in 20 sessions you will see a difference and in 30 sessions you will have a whole new body"</p>
+            <a href="#" class="btn btn-primary btn-success bebas">Learn more</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- End card 2 -->
+     <!-- Card 3 -->
+      <div class="cardContainer col-lg-4 col-md-4 col-sm-12">
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1602070707924-6dd4c9996f48?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2550&q=80"class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Yoga</h5>
+            <p class="card-text">"Explore, unwind and practice different levels of Vinyasa yoga"</p>
+            <a href="#" class="btn btn-primary bebas btn-success">Learn more</a>
+          </div>
+        </div>
+      </div>
+      <!-- End card 3 -->
+     </div>
+  </div>
+  <!-- End cards -->
+
+  
+              
+          
+   
 
 
 <div class="subtitle text-left">
-<p>"The Art of Breathing is designed to help you feel better in body and mind by practicing Yoga and Meditation"</p>
+<p>"The Art of Breathing is to help you feel better in body and mind by practicing Meditation, Pilates and Yoga"</p>
 </div>
+    <!-- 2nd set of Cards -->
+  <div class="container-fluid content">
+    <h3 class="sectionHeading"> Choose 2 free online classes</h3>
+   <div class="row showsNear">
+      <!-- 2nd set Card 1 -->
+     <div class="cardContainer col-lg-4 col-md-4 col-sm-12">
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1499810631641-541e76d678a2?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2550&q=80"class="card-img-top" alt="...">
+          <div class="card-body">
+            <h6 class="card-title">Morning meditation (20 minutes)</h6>
+            <p class="card-text">"Staring your morning with meditation is a great way to start the day on the right foot and energize you before a busy day."</p>
+            <a href="#" class="btn btn-primary bebas btn-success">Select</a>
+          </div>
+        </div>
+      </div>
+     <!-- End 2nd set card 1 --> 
+     
+     <!-- 2nd set Card 2 -->
+     <div class="cardContainer col-lg-4 col-md-4 col-sm-12">
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1604467731651-3d8b9c702b86?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1234&q=80"class="card-img-top" alt="...">
+          <div class="card-body">
+            <h6 class="card-title">Begin your Pilates class (30 minutes)</h6>
+            <p class="card-text">"Pilates is a system of exercise and movement that is designed to increase strength, flexibility and balance."</p>
+            <a href="#" class="btn btn-primary bebas btn-success">Select</a>
+          </div>
+        </div>
+      </div>
+     <!-- End 2nd set card 2 --> 
+     
+     <!-- 2nd set Card 3 -->
+     <div class="cardContainer col-lg-4 col-md-4 col-sm-12">
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1586439496903-c96e9f18f212?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1834&q=80"class="card-img-top" alt="...">
+          <div class="card-body">
+            <h6 class="card-title">Beginners yoga guide (30 minutes)</h6>
+            <p class="card-text">"New to yoga? Our beginners yoga guide will give you the best tips, guidelines, advice & recommendations you need to start a successful yoga practice."</p>
+            <a href="#" class="btn btn-primary bebas btn-success">Select</a>
+          </div>
+        </div>
+      </div>
+     <!-- End 2nd set card 3 -->
 
-<div class="tableContainer text-center">
-<h3>Select Levels</h3>
-<table class="table table-borderless">
-  <thead>
-    <tr>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Level 1</td>
-      <td>20 minutes</td>
-    </tr>
-    <tr>
-      <td>Level 2</td>
-      <td>30 minutes</td>
-    </tr>
-    <tr>
-      <td>Level 3</td>
-      <td>40 minutes</td>
-    </tr>
-    
-  </tbody>
-</table>
-</div>
-
-<div class="bookclassContainer text-center">
-<h3>Book your class now</h2>
-<button type="button" class="btn btn-lg disabled">Book now</button>
-
-
-
-<div id="demo" class="carousel slide" data-ride="carousel">
-
-<!-- Indicators -->
-<ul class="carousel-indicators">
-  <li data-target="#demo" data-slide-to="0" class="active"></li>
-  <li data-target="#demo" data-slide-to="1"></li>
-  <li data-target="#demo" data-slide-to="2"></li>
-</ul>
-
-<!-- The slideshow -->
-<div class="carousel-inner">
- 
-  </div>
-  <div class="carousel-item">
+   
    
 
-<!-- Left and right controls -->
-<a class="carousel-control-prev" href="#demo" data-slide="prev">
-  <span class="carousel-control-prev-icon"></span>
-</a>
-<a class="carousel-control-next" href="#demo" data-slide="next">
-  <span class="carousel-control-next-icon"></span>
-</a>
+  <section class="footerbg">
+    <section class="container-fluid signUp">
+<div class="row">
+   <div class="emailContain">
+    <form>
+      <div class="form-group">
+      <h3>Sign up to "The Art of breathing"</h3>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+          placeholder="Enter email">
+      </div>
+        <div class="form-group">
+  <label for="exampleInputPassword1">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+</div>
+      <button type="Sign up" class="btn btn-primary btn-md bebas">Sign up</button>
+    </form>
+    </div>
+  </section>
+  
+  
+  <h3>Live classes</h3>
+  
+   <!-- Table -->
+  
+  <table class="table">
+    <table class="table table-hover">
+
+</table>
+<thead>
+  <tr>
+    
+    
+    <th scope="col">Levels</th>
+    <th scope="col">Minutes</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    
+    <td>Yoga level 1</td>
+    <td>20 Minutes</td>
+    
+  </tr>
+  <tr>
+    
+    <td>Yoga level 2</td>
+    <td>30 Minutes</td>
+    
+  </tr>
+  <tr>
+   
+    <td>Yoga level 3</td>
+    <td>40 Minutes</td>
+  </tr>
+</tbody>
+</table>
+ 
+
+
+<div class="bookclassContainer text-center">
+<h3>Enroll your class</h2>
+<button type="button" class="btn btn-lg disabled">Enroll now</button>
+  </div>
+
+
+
+
+
+    </body>
+
+
 </html>
